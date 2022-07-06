@@ -63,14 +63,15 @@ h1 {
     display: flex;
 }
 .headerli {
-    border-top: 1px solid #000000;
     margin: 20px;
     transition: 500ms;
 }
 .headerli:hover {
     transform: scale(1.2);
     background-color: #49454523;
+    border-top: 1px solid #000000;
 }
+
 .headera {
     color: #000000;
     font-size: 1.2rem;
@@ -83,6 +84,10 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 40px;
+}
+.imgbanner {
+    width: 40%;
+    height: 30%;
 }
 /*------------------------SECCIONES-REMERAS-----------*/
 .divremeras {
@@ -98,6 +103,7 @@ h1 {
     align-items: center;
     transition: 500ms;
     background-color: #ffffff;
+    cursor: pointer;
 }
 .sectionremeras:hover {
     box-shadow: 10px 10px 25px 3px rgba(0,0,0,0.75);
@@ -216,6 +222,16 @@ h1 {
 /*---------------------MEDIAQ-380PX-----------*/
 @media (min-width:0px) and (max-width: 380px){
     /*------------------GRIDS-----------*/
+    .divuniversal2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 40px 120px 850px 300px;
+        grid-template-areas: 
+        "h2 h2"
+        "header header"
+        "main main"
+        "footer footer";
+    }
     .divuniversal {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -437,6 +453,16 @@ h1 {
 /*---------------------MEDIAQ-460PX-----------*/
 @media (min-width:381px) and (max-width: 460px){
     /*------------------GRIDS-----------*/
+    .divuniversal2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 40px 120px 850px 300px;
+        grid-template-areas: 
+        "h2 h2"
+        "header header"
+        "main main"
+        "footer footer";
+    }
     .divuniversal {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -655,6 +681,16 @@ h1 {
 /*---------------------MEDIAQ-900PX-----------*/
 @media (min-width:461px) and (max-width: 599px){
     /*------------------GRIDS-----------*/
+    .divuniversal2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 40px 120px 800px 300px;
+        grid-template-areas: 
+        "h2 h2"
+        "header header"
+        "main main"
+        "footer footer";
+    }
     .divuniversal {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -877,6 +913,16 @@ h1 {
 /*---------------------MEDIAQ-900PX-----------*/
 @media (min-width:601px) and (max-width: 900px){
     /*------------------GRIDS-----------*/
+    .divuniversal2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 40px 120px 850px 300px;
+        grid-template-areas: 
+        "h2 h2"
+        "header header"
+        "main main"
+        "footer footer";
+    }
     .divuniversal {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1303,3 +1349,47 @@ h1 {
     }
 }
 /*--------------------------------------FIN-----------------*/
+.divh4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.h4 {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.divptext {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+.ptext {
+    font-size: 1rem;
+}
+
+
+.sectionforma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+}
+.divforma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.divenviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
